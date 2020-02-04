@@ -1,0 +1,21 @@
+header{
+
+
+display: flex;
+background-color: saddlebrown;
+flex-direction: column;
+width: 400px;
+padding-left: 0%;
+
+
+
+}
+
+#logo{
+
+
+    width: 350px;
+    height: 300px;
+    align-self: center;
+
+}
