@@ -10,6 +10,10 @@
 
 /* Reset */
 
+
+
+
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1793,7 +1797,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
+		color: #ffffff;
 	}
 
 	blockquote {
@@ -3328,7 +3332,7 @@
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: fixed;
+		position: absolute;
 		text-align: right;
 		top: 1em;
 		width: 100%;
@@ -3344,12 +3348,12 @@
 		#header .logo {
 			display: inline-block;
 			height: inherit;
-			left: 1.5em;
+			left: 1rem;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
-			top: 0;
+			top: 20rem;
 		}
 
 			#header .logo a {
@@ -3380,6 +3384,7 @@
 		}
 
 			#header > a[href="#menu"] {
+				position: fixed;
 				text-decoration: none;
 				-webkit-tap-highlight-color: transparent;
 				background: rgba(255, 255, 255, 0.15);
@@ -3457,6 +3462,46 @@
 
 /* Menu */
 
+
+
+#menuHead{
+	position:fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+
+
+
+}
+
+#menuHead > ul > li > a {
+	color : #ffffff;
+	font-family: "Gravity-Light";
+	text-decoration: none;
+
+}
+
+#menuHead > ul  {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+
+
+}
+
+#menuHead li{
+
+	flex-direction: row;
+	margin:0 3rem 0 3rem;
+
+	
+}
+
+
 	#menu {
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
@@ -3481,6 +3526,8 @@
 		width: 20em;
 		z-index: 10002;
 	}
+
+
 
 		#menu > ul {
 			margin: 0 0 1em 0;
@@ -3581,23 +3628,21 @@
 
 /* Banner */
 
+
+
 	#banner {
 		display: -ms-flexbox;
-		-ms-flex-pack: center;
-		-ms-flex-align: center;
+
 		padding: 8em 0 6em 0;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
+	
 		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
+	
 		display: flex;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
+
 		justify-content: center;
+
+		background-image: url("../../images/banner.jpg");
+
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -3608,6 +3653,8 @@
 		position: relative;
 		text-align: center;
 		overflow: hidden;
+		
+
 	}
 
 		#banner .inner {
@@ -3627,9 +3674,9 @@
 		#banner h1 {
 			font-size: 7em;
 			line-height: 1.1;
-			font-family: url("../fonts/Gravity-UltraLight");
+			font-family: "Gravity-UltraLight";
 			margin-bottom: .25em;
-			color: rgba(255, 255, 255, 0.75);
+			color:  #ffffff;
 			text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
 			text-transform: none;
 		}
@@ -3684,10 +3731,10 @@
 			-webkit-transition: height 0.2s ease;
 			-ms-transition: height 0.2s ease;
 			transition: height 0.2s ease;
-			-moz-animation: more 0.75s ease-out 3s forwards;
-			-webkit-animation: more 0.75s ease-out 3s forwards;
-			-ms-animation: more 0.75s ease-out 3s forwards;
-			animation: more 0.75s ease-out 3s forwards;
+			-moz-animation: more 0.75s ease-out 1.5s forwards;
+			-webkit-animation: more 0.75s ease-out 1.5s forwards;
+			-ms-animation: more 0.75s ease-out 1.5s forwards;
+			animation: more 0.75s ease-out 1.5s forwards;
 			background-color: rgba(255, 255, 255, 0.15);
 			border: 0;
 			border-radius: 1em 1em 0 0;
@@ -3736,14 +3783,14 @@
 			}
 
 		#banner:before {
-			-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
+			-moz-transition: opacity 2s ease;
+			-webkit-transition: opacity 2s ease;
+			-ms-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+			-moz-transition-delay:  0.9s;
+			-webkit-transition-delay:  0.9s;
+			-ms-transition-delay:  0.9s;
+			transition-delay: 0.9s;
 			content: '';
 			display: block;
 			background-color: #000;
@@ -3793,6 +3840,19 @@
 			}
 
 		}
+
+
+
+		#paint {
+
+
+
+
+		}
+
+
+
+
 
 		body.is-loading #banner .inner {
 			-moz-transform: scale(0.99);
@@ -4429,3 +4489,12 @@
 			}
 
 		}
+
+
+
+
+			
+		
+			
+		
+		
