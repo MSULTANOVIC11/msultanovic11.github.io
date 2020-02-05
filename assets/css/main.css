@@ -2564,6 +2564,7 @@
 
 		ul li {
 			padding-left: 0.5em;
+			padding-right: 0.5em;
 		}
 
 		ul.alt {
@@ -2729,7 +2730,7 @@
 
 	header p {
 		position: relative;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0 0;
 	}
 
 	header h2 + p {
@@ -3472,6 +3473,9 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	bottom: 93%;
+	transition: 0.3s all;
+	
 	
 
 
@@ -3482,6 +3486,7 @@
 	color : #ffffff;
 	font-family: "Gravity-Light";
 	text-decoration: none;
+	
 
 }
 
@@ -3489,6 +3494,14 @@
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
+	
+	margin:0 3rem 0 3rem;
+	
+	padding: 0;
+	transition: 0.8s all;
+	
+
+	
 
 
 }
@@ -3497,7 +3510,20 @@
 
 	flex-direction: row;
 	margin:0 3rem 0 3rem;
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 93%;
 
+	
+}
+
+#menuHead li:hover  {
+	
+	transition: 0.8s all;
+
+	background-color: rgba(128,128,128,0.1);
 	
 }
 
@@ -4490,10 +4516,22 @@
 
 		}
 
+.changeColor{
 
 
+		background-color: white;
+		
+		
+		
+		
+		
+}
 
-			
+.changeColor > ul > li > a {
+	color : black;
+
+
+}
 		
 			
 		

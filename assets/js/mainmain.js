@@ -18,6 +18,19 @@
             }, 100);
         });
 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#menuHead').addClass('changeColor');
+                $('#menuHead ul li a').css({ 'color': 'black' });
+                $('#menuHead').css({ 'color': 'black', 'padding-top': '0px', 'bottom': '94.5%', });
+            }
+            if ($(this).scrollTop() < 50) {
+                $('#menuHead').removeClass('changeColor')
+                $('#menuHead ul li a').css({ 'color': 'white' });
+                $('#menuHead').css({ 'color': 'black', 'padding-top': '5px', 'bottom': '93%', });
+            }
+        });
+
 
 
 
