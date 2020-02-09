@@ -70,7 +70,7 @@ table {
 
 
 .inner {
-    width: 60em;
+    width: 95em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -210,7 +210,7 @@ blockquote {
 hr {
     border: 0;
     border-bottom: solid 1px;
-    margin: 2em 0;
+    margin: 0.7em 0;
 }
 
     hr.major {
@@ -1390,4 +1390,64 @@ color : black;
             padding: 2em 0;
         }
 
-    }
+	}
+	
+
+
+	.card {
+		
+		display:inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+		
+		
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		width: 30%;
+		height: 60%;
+		margin: 1em;
+		background-color: white;
+	  }
+	  
+	  
+	  .card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	  }
+	  
+	  
+	  .container {
+		padding: 2px 16px;
+		
+
+	  }
+
+	  .container > .fin{
+		margin : -0.5em 0 0 0;
+
+	  }
+
+	  .container > .fin2{
+		margin : 0.5em 0 0 0;
+
+	  }
+
+	  .container > .fin2 > span {
+		  margin-right: 1em;
+		  padding: 0.1em ;
+		background-color: rgba(110, 218, 128, 0.822);
+
+	  }
+
+	  .container > h4 {
+		  margin: 0;
+	  }
+
+	  .ensemble-card {
+		display:inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;	
+
+
+	  }
