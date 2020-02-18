@@ -1453,3 +1453,10 @@ color : black;
 
 
 	  }
+	  
+	  .container > p > a:hover{
+		  opacity: 0.4;
+		  
+	  }
+	
+	  
