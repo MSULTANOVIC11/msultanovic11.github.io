@@ -409,6 +409,7 @@
     var sticky = footer.offsetTop;
 
     function myFunction() {
+        alert(window.screen.width);
         if (window.pageYOffset > sticky) {
             footer.classList.add("sticky");
         } else {
@@ -421,10 +422,13 @@
     function redimensionnement() {
         // Détection
         if (window.matchMedia("(max-width:576px)").matches) {
+            alert("telephone");
             console.log("Telephone");
         } else if (window.matchMedia("(max-width:740px)").matches) {
+            alert("tablette");
             console.log("tablette");
         } else {
+            alert(window.screen.width);
             console.log("ntm");
         }
     }
