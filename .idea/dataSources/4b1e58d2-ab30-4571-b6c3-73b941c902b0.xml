@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mpd.sqlite">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.16">
+    <root id="1">
+      <ServerVersion>3.25.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="Badge"/>
+    <table id="7" parent="2" name="Collection"/>
+    <table id="8" parent="2" name="Item"/>
+    <table id="9" parent="2" name="Jeu"/>
+    <table id="10" parent="2" name="Offre de vente"/>
+    <table id="11" parent="2" name="Profil"/>
+    <table id="12" parent="2" name="Repetoire"/>
+    <table id="13" parent="2" name="Theme"/>
+    <table id="14" parent="2" name="Utilisateur"/>
+    <table id="15" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <column id="16" parent="6" name="ID_Badge">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="17" parent="6" name="Icone">
+      <Position>2</Position>
+      <DataType>varchar(40)|0s</DataType>
+    </column>
+    <column id="18" parent="6" name="Titre">
+      <Position>3</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="19" parent="6" name="Description">
+      <Position>4</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <index id="20" parent="6" name="sqlite_autoindex_Badge_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Badge</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="21" parent="6" name="Badge_pk">
+      <ColNames>ID_Badge</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Badge_1</UnderlyingIndexName>
+    </key>
+    <column id="22" parent="7" name="ID_Collection">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="23" parent="7" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="24" parent="7" name="Abreviation">
+      <Position>3</Position>
+      <DataType>varchar(10)|0s</DataType>
+    </column>
+    <column id="25" parent="7" name="Image">
+      <Position>4</Position>
+      <DataType>varchar(4000)|0s</DataType>
+    </column>
+    <column id="26" parent="7" name="Description">
+      <Position>5</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <column id="27" parent="7" name="Edition">
+      <Position>6</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <index id="28" parent="7" name="sqlite_autoindex_Collection_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Collection</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="29" parent="7" name="Collection_pk">
+      <ColNames>ID_Collection</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Collection_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="30" parent="7">
+      <ColNames>ID_Collection</ColNames>
+      <RefTableName>Theme</RefTableName>
+      <RefKeyName>Theme_pk</RefKeyName>
+      <RefColNames>ID_Theme</RefColNames>
+    </foreign-key>
+    <column id="31" parent="8" name="ID_Item">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="32" parent="8" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="33" parent="8" name="Descripition">
+      <Position>3</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <column id="34" parent="8" name="But">
+      <Position>4</Position>
+      <DataType>varchar(10)|0s</DataType>
+    </column>
+    <column id="35" parent="8" name="Prix">
+      <Position>5</Position>
+      <DataType>float(10)|0s</DataType>
+    </column>
+    <column id="36" parent="8" name="Commentaires">
+      <Position>6</Position>
+      <DataType>varchar(130)|0s</DataType>
+    </column>
+    <column id="37" parent="8" name="Likes">
+      <Position>7</Position>
+      <DataType>int(999999999)|0s</DataType>
+    </column>
+    <index id="38" parent="8" name="sqlite_autoindex_Item_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Item</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="8" name="Item_pk">
+      <ColNames>ID_Item</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Item_1</UnderlyingIndexName>
+    </key>
+    <column id="40" parent="9" name="ID_Jeu">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="41" parent="9" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="42" parent="9" name="Abreviation">
+      <Position>3</Position>
+      <DataType>varchar(10)|0s</DataType>
+    </column>
+    <column id="43" parent="9" name="Image">
+      <Position>4</Position>
+      <DataType>varchar(4000)|0s</DataType>
+    </column>
+    <column id="44" parent="9" name="Logo">
+      <Position>5</Position>
+      <DataType>varchar(500)|0s</DataType>
+    </column>
+    <column id="45" parent="9" name="Description">
+      <Position>6</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <index id="46" parent="9" name="sqlite_autoindex_Jeu_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Jeu</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="9" name="Jeu_pk">
+      <ColNames>ID_Jeu</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Jeu_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="48" parent="9">
+      <ColNames>ID_Jeu</ColNames>
+      <RefTableName>Collection</RefTableName>
+      <RefKeyName>Collection_pk</RefKeyName>
+      <RefColNames>ID_Collection</RefColNames>
+    </foreign-key>
+    <foreign-key id="49" parent="9">
+      <ColNames>ID_Jeu</ColNames>
+      <RefTableName>Item</RefTableName>
+      <RefKeyName>Item_pk</RefKeyName>
+      <RefColNames>ID_Item</RefColNames>
+    </foreign-key>
+    <column id="50" parent="10" name="ID_Offre">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="51" parent="10" name="Prix">
+      <Position>2</Position>
+      <DataType>float(10)|0s</DataType>
+    </column>
+    <column id="52" parent="10" name="Objet">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+    </column>
+    <index id="53" parent="10" name="sqlite_autoindex_Offre de vente_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Offre</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="10" name="Offre de vente_pk">
+      <ColNames>ID_Offre</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Offre de vente_1</UnderlyingIndexName>
+    </key>
+    <column id="55" parent="11" name="ID_Profil">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="56" parent="11" name="Jeux">
+      <Position>2</Position>
+      <DataType>varchar(40)|0s</DataType>
+    </column>
+    <column id="57" parent="11" name="Collections">
+      <Position>3</Position>
+      <DataType>varchar(4000)|0s</DataType>
+    </column>
+    <column id="58" parent="11" name="Items">
+      <Position>4</Position>
+      <DataType>varchar(4000)|0s</DataType>
+    </column>
+    <column id="59" parent="11" name="Abonnees">
+      <Position>5</Position>
+      <DataType>varchar(40)|0s</DataType>
+    </column>
+    <column id="60" parent="11" name="Abonnements">
+      <Position>6</Position>
+      <DataType>varchar(40)|0s</DataType>
+    </column>
+    <index id="61" parent="11" name="sqlite_autoindex_Profil_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Profil</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="11" name="Profil_pk">
+      <ColNames>ID_Profil</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Profil_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="63" parent="11">
+      <ColNames>ID_Profil</ColNames>
+      <RefTableName>Repetoire</RefTableName>
+      <RefKeyName>Repetoire_pk</RefKeyName>
+      <RefColNames>ID_Repertoire</RefColNames>
+    </foreign-key>
+    <column id="64" parent="12" name="ID_Repertoire">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="65" parent="12" name="Mesaages">
+      <Position>2</Position>
+      <DataType>varchar(5000)|0s</DataType>
+    </column>
+    <column id="66" parent="12" name="Contact">
+      <Position>3</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <index id="67" parent="12" name="sqlite_autoindex_Repetoire_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Repertoire</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="68" parent="12" name="Repetoire_pk">
+      <ColNames>ID_Repertoire</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Repetoire_1</UnderlyingIndexName>
+    </key>
+    <column id="69" parent="13" name="ID_Theme">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="70" parent="13" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="71" parent="13" name="Abreavation">
+      <Position>3</Position>
+      <DataType>varchar(10)|0s</DataType>
+    </column>
+    <column id="72" parent="13" name="Image">
+      <Position>4</Position>
+      <DataType>varchar(4000)|0s</DataType>
+    </column>
+    <column id="73" parent="13" name="Description">
+      <Position>5</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <index id="74" parent="13" name="sqlite_autoindex_Theme_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Theme</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="75" parent="13" name="Theme_pk">
+      <ColNames>ID_Theme</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Theme_1</UnderlyingIndexName>
+    </key>
+    <column id="76" parent="14" name="ID_Utilisateur">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="77" parent="14" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="78" parent="14" name="Prenom">
+      <Position>3</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="79" parent="14" name="Sexe">
+      <Position>4</Position>
+      <DataType>varchar(10)|0s</DataType>
+    </column>
+    <column id="80" parent="14" name="Adresse-Mail">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+    </column>
+    <column id="81" parent="14" name="motdepasse">
+      <Position>6</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="82" parent="14" name="Pseudo">
+      <Position>7</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="83" parent="14" name="Image-de-profil">
+      <Position>8</Position>
+      <DataType>varchar(400)|0s</DataType>
+    </column>
+    <column id="84" parent="14" name="Description">
+      <Position>9</Position>
+      <DataType>varchar(300)|0s</DataType>
+    </column>
+    <index id="85" parent="14" name="sqlite_autoindex_Utilisateur_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_Utilisateur</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="86" parent="14" name="Utilisateur_pk">
+      <ColNames>ID_Utilisateur</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Utilisateur_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="87" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Jeu</RefTableName>
+      <RefKeyName>Jeu_pk</RefKeyName>
+      <RefColNames>ID_Jeu</RefColNames>
+    </foreign-key>
+    <foreign-key id="88" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Collection</RefTableName>
+      <RefKeyName>Collection_pk</RefKeyName>
+      <RefColNames>ID_Collection</RefColNames>
+    </foreign-key>
+    <foreign-key id="89" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Theme</RefTableName>
+      <RefKeyName>Theme_pk</RefKeyName>
+      <RefColNames>ID_Theme</RefColNames>
+    </foreign-key>
+    <foreign-key id="90" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Item</RefTableName>
+      <RefKeyName>Item_pk</RefKeyName>
+      <RefColNames>ID_Item</RefColNames>
+    </foreign-key>
+    <foreign-key id="91" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Offre de vente</RefTableName>
+      <RefKeyName>Offre de vente_pk</RefKeyName>
+      <RefColNames>ID_Offre</RefColNames>
+    </foreign-key>
+    <foreign-key id="92" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Badge</RefTableName>
+      <RefKeyName>Badge_pk</RefKeyName>
+      <RefColNames>ID_Badge</RefColNames>
+    </foreign-key>
+    <foreign-key id="93" parent="14">
+      <ColNames>ID_Utilisateur</ColNames>
+      <RefTableName>Profil</RefTableName>
+      <RefKeyName>Profil_pk</RefKeyName>
+      <RefColNames>ID_Profil</RefColNames>
+    </foreign-key>
+    <column id="94" parent="15" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="95" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="96" parent="15" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="97" parent="15" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="98" parent="15" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

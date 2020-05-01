@@ -1,0 +1,195 @@
+h1 {
+    background-color: #292F33;
+}
+.logo
+{
+    float: left;
+    background-color: #292F33;
+}
+header
+{
+    background-color: rgb(38,62,77);
+}
+a
+{
+    opacity: 0.7;
+}
+a:hover
+{
+    opacity: 1;
+}
+a:link
+{
+    text-decoration:none;
+
+}
+article
+{
+    background-color: #A3BCCC;
+    border-radius: 10px;
+
+
+}
+.bouton button
+{
+    border:0;
+    border-radius: 10px;
+}
+.bouton button:first-child
+{
+    background: #3D6680;
+}
+.bouton button:last-child
+{
+    background: #A3BCCC;
+}
+.start svg
+{
+
+    animation: 0.6s cubic-bezier(0.6, 0.1, 0.8, 0.6)
+    infinite alternate bounce;
+
+}
+@keyframes bounce {
+     from { transform: translate(0, 0); }
+     to   { transform: translate(0, 10px); }
+ }
+
+.start path
+{
+    height: 80px;
+    width: 80px;
+}
+#page1 {
+    background: repeat-x url("../../img/Image_Fond.png");
+    background-repeat: repeat;
+    background-color: #292F33;
+    border-top: 1px solid #707070;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+}
+#page2
+{
+    background-color: #292F33;
+}
+#page3
+{
+    background-color: #263E4D;
+}
+#page4
+{
+    background-color: #292F33;
+}
+.carte
+{
+    border:10px solid #263E4D;
+}
+.carte p
+{
+    border-top:10px solid #263E4D ;
+}
+.carte2 p
+{
+    border-top:10px solid #292F33 ;
+}
+.carte2
+{
+    border:10px solid #292F33;
+}
+.newsletter button
+{
+    background: #A3BCCC;
+    border:0;
+    border-radius: 10px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+footer
+{
+    background-color: #263E4D;
+    z-index: 1;
+}
+footer h1
+{
+    background-color: #263E4D;
+}
+footer span
+{
+    margin-top: 4%;
+    background-color: #FAFAFA;
+}
+
+
+
+.mail
+{
+    border: 5px solid #A3BCCC;
+    border-radius: 17px;
+    padding-left: 5%;
+
+}
+footer button{
+    background-color: #A3BCCC;
+    width: 19%;
+    margin-left: 6%;
+    border: none;
+    border-radius: 10px;
+    float: right;
+
+
+}
+footer textarea
+{
+    background-color: #263E4D;
+    font-family: "Odibee Sans", serif;
+    color:#FAFAFA;
+    border: none;
+    resize: none;
+    height: 113%;
+    width: 109%;
+}
+footer label
+{
+    display: grid;
+    width: 74%;
+    height: 44px;
+}
+.diriger
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.flou
+{
+    filter: blur(10px);
+
+}
+.bye
+{
+    transform: translatey(-40vw);
+    transition: all .4s ease;
+}
+.inscription textarea
+{
+    background-color: #263E4D;
+    font-family: "Odibee Sans", serif;
+    color:#FAFAFA;
+    border: none;
+    resize: none;
+    height: 113%;
+    width: 109%;
+}
+/* full page
+#fullpage {
+    height:450vh;
+    overflow:hidden;
+}
+#fullpage section
+{
+    height:100vh;
+}
+
+*/
