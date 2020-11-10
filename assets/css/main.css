@@ -631,6 +631,7 @@ body.subpage {
 #menuHead > ul > li > a {
   color: #ffffff;
   font-family: "Gravity-Light";
+  font-weight: bold;
   text-decoration: none;
 }
 
