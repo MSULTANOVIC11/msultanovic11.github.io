@@ -41,7 +41,7 @@
 
             p.scrollex({
                 top: '40vh',
-                bottom: '40vh',
+                bottom: '0vh',
                 terminate: function () { m.removeClass('current'); i.removeClass('current'); },
                 enter: function () { m.addClass('current'); i.addClass('current'); },
                 leave: function () { m.removeClass('current'); i.removeClass('current'); }
