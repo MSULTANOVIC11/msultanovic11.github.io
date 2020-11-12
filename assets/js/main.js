@@ -1,5 +1,6 @@
 (function ($) {
 
+
     $(function () {
 
         var $window = $(window),
@@ -11,8 +12,10 @@
 
         // Wait for the page loading then makes animation
         $body.addClass('is-loading');
+        
 
         $window.on('load', function () {
+            $(".se-pre-con").fadeOut("slow");;
             window.setTimeout(function () {
                 $body.removeClass('is-loading');
             }, 100);
