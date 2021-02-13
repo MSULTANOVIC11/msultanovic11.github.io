@@ -9,6 +9,14 @@
   width: 400px;
   padding-left: 0%;
 } */
+@font-face {
+  src: url(../fonts/Gravity-Light.otf);
+  font-family: "Gravity-Light";
+}
+@font-face {
+  src: url(../fonts/Gravity-UltraLight.otf);
+  font-family: "Gravity-UltraLight";
+}
 
 html,
 body {
@@ -18,12 +26,17 @@ body {
   padding: 0;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 #banner {
   display: -ms-flexbox;
 
   align-items: center;
 
   display: flex;
+  flex-direction: column;
 
   justify-content: center;
 
@@ -53,7 +66,8 @@ body {
 }
 #banner header {
   width: auto;
-  border-style: dotted none dotted none;
+  border-style: dashed none dashed none;
+  border-width: 1px;
 }
 
 #banner p {
@@ -71,11 +85,30 @@ body {
   color: white;
 }
 
-@font-face {
-  src: url(../fonts/Gravity-Light.otf);
-  font-family: "Gravity-Light";
+#navig {
+  display: flex;
+  flex-direction: row;
 }
-@font-face {
-  src: url(../fonts/Gravity-UltraLight.otf);
-  font-family: "Gravity-UltraLight";
+
+#navig div {
+  text-align: center;
+  width: 7em;
+  height: 2.5em;
+  margin-top: 2em;
+  margin-left: 1em;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+}
+
+#navig div:hover {
+  background-color: white;
+}
+#navig div:hover p {
+  color: rgb(29, 29, 29);
+}
+
+#navig p {
+  margin: 0%;
+  margin-top: 0.27em;
 }
