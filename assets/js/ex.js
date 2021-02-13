@@ -55,7 +55,7 @@ function loadBackground(){
        backG.style.backgroundImage="url("+photo+")";
     }).catch(error =>{
         var backG = document.getElementsByClassName("background-image")[0];
-        backG.style.backgroundImage="url(images/defaultBackground.jpg)";
+        backG.style.backgroundImage="url(assets/images/defaultBackground.jpg)";
     });
 
     
