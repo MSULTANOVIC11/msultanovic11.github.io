@@ -32,8 +32,7 @@ a:link {
 }
 
 .background-image {
-  background-image: url("../../images/backk.jpg");
-
+  /* background-image: url("../../images/backk.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

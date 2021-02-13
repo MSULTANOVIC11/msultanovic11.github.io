@@ -39,7 +39,36 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
+
+function loadBackground(){
+    const url = "https://api.unsplash.com/photos/random/?count=1&collections=11202998&client_id=q66Nd00EFVibb6KoE08DZpbFHOhrBPJKz-pShruifO8"
+    var photo;
+
+    fetch(url).then(response =>{
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response.json();
+    }).then(data =>{
+       photo = data[0]["urls"]["regular"];
+       var backG = document.getElementsByClassName("background-image")[0];
+       backG.style.backgroundImage="url("+photo+")";
+    }).catch(error =>{
+        var backG = document.getElementsByClassName("background-image")[0];
+        backG.style.backgroundImage="url(images/defaultBackground.jpg)";
+    });
+
+    
+    
+};
+
 window.onload = function() {
+
+
+
+    loadBackground();
+
+
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -48,11 +77,9 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    
+
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; margin-right:0.2em; animation: animated-cursor 1000ms steps(2,start) infinite;  -webkit-animation: animated-cursor 1000ms steps(2, start) infinite;}";
     document.body.appendChild(css);
-
-    
 };
