@@ -53,12 +53,14 @@ function loadBackground(){
        photo = data[0]["urls"]["regular"];
        var backG = document.getElementsByClassName("background-image")[0];
        backG.style.backgroundImage="url("+photo+")";
+
     }).catch(error =>{
         var backG = document.getElementsByClassName("background-image")[0];
         backG.style.backgroundImage="url(assets/images/defaultBackground.jpg)";
+
     });
 
-    
+    return 0;
     
 };
 
@@ -66,7 +68,7 @@ window.onload = function() {
 
 
 
-    loadBackground();
+    var temp = loadBackground();
 
 
     var elements = document.getElementsByClassName('typewrite');
