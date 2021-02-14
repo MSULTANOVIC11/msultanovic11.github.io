@@ -9,20 +9,25 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <div class="background-image"></div>
-  <header class="navigator">
-    <a href="index copy.html">
-      <div id="name"><p>Maid Sultanovic</p></div></a
-    >
+  <header class="navigator" id="myTopNav">
     <nav>
-      <a href="about.html">
-        <div><p>About</p></div></a
+      <a id="nameA" href="index copy.html">
+        <div id="name"><p>Maid Sultanovic</p></div></a
       >
-      <a id="here-menu" href="portfolio.html">
-        <div><p>Portfolio</p></div></a
-      >
-      <a href="contact.html">
-        <div><p>Contact</p></div></a
-      >
+      <div id="rightSideNav">
+        <a href="about.html">
+          <div><p>About</p></div></a
+        >
+        <a id="here-menu" href="portfolio.html">
+          <div><p>Portfolio</p></div></a
+        >
+        <a href="contact.html">
+          <div><p>Contact</p></div></a
+        >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
   </header>
   <body>
@@ -74,4 +79,5 @@
     <div class="one-project" style="background-color: gray"></div>
   </body>
   <script src="assets/js/ex.js"></script>
+  <script src="assets/js/nav.js"></script>
 </html>

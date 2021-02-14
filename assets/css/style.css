@@ -147,17 +147,45 @@ a:link {
 }
 
 .logo {
-  background-image: url("../images/logo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
 
-  position: fixed;
-  display: inline-block;
+@media screen and (max-width: 550px) {
+  #banner h1 {
+    font-size: 3em;
+  }
 
-  width: 5em;
-  height: 5em;
+  #navig div {
+    width: 6em;
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+
+  .logo {
+    width: 9em;
+    height: 9em;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-height: 500px) {
+  #banner h1 {
+    font-size: 3em;
+  }
+
+  #banner p {
+    font-size: 1.15em;
+  }
+
+  #navig div {
+    width: 7em;
+    height: 2em;
+    margin-left: 1em;
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 8em;
+    height: 8em;
+  }
 }
 
 .navigator {
@@ -174,22 +202,32 @@ a:link {
 }
 
 .navigator nav {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  width: 100%;
   opacity: 1;
-  margin-left: 30em;
 }
 
 .navigator nav a {
+  float: right;
   text-align: center;
   width: 7em;
   font-family: "Gravity-Regular";
 }
 
-#name {
-  margin-left: 30em;
+.navigator nav #rightSideNav {
+  margin-right: 20%;
+}
+
+.navigator nav a #name {
+  width: 10em;
   font-family: "Gravity-Regular";
   font-size: 1em;
+}
+
+.navigator nav #nameA {
+  float: left;
+  margin-left: 20%;
+  margin-right: 0;
 }
 #here-menu {
   background-color: rgba(0, 0, 0, 0.3);
@@ -275,4 +313,66 @@ a:link {
 
 .entry:hover p {
   color: rgb(29, 29, 29);
+}
+
+.navigator .icon {
+  display: none;
+}
+
+@media screen and (max-width: 790px) {
+  #portf .inner {
+    margin-top: 18em;
+  }
+
+  .logo-main {
+    width: 18em;
+    height: 18em;
+    top: 15em;
+  }
+
+  .entry p {
+    font-size: 1em;
+    margin-top: 0.6em;
+  }
+
+  #name {
+    margin-left: 1em;
+    font-size: 0.8em;
+  }
+
+  .navigator nav a {
+    display: none;
+  }
+
+  .navigator nav #nameA {
+    display: block;
+  }
+
+  .navigator .icon {
+    float: right;
+    display: block;
+    margin-top: 5%;
+  }
+
+  .navigator.responsive {
+    position: fixed;
+  }
+  .navigator.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-height: 810) {
+  .logo-main {
+    position: relative;
+    width: 5em;
+    height: 5em;
+  }
+
+  #portf .inner {
+    margin-top: 18em;
+  }
 }
