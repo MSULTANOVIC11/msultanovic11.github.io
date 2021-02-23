@@ -65,13 +65,9 @@ function loadBackground(){
 };
 
 
-
 window.onload = function() {
 
-
-
     var temp = loadBackground();
-
 
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {

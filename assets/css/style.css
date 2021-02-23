@@ -60,6 +60,17 @@ a:link {
   z-index: 0;
 }
 
+.background-color {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 110%;
+}
+
 #banner {
   display: -ms-flexbox;
 
@@ -257,6 +268,24 @@ a:link {
   z-index: 1;
 }
 
+.portf-project {
+  display: -ms-flexbox;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  border-top: 0;
+  min-height: 100%;
+  height: 110%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
 #portf .inner {
   margin-top: 12em;
   font-family: "Gravity-UltraLight";
@@ -375,4 +404,71 @@ a:link {
   #portf .inner {
     margin-top: 18em;
   }
+}
+
+.project-presentation {
+  width: 100%;
+  height: 48em;
+  display: -ms-flexbox;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.project-presentation h1 {
+  margin-bottom: 5px;
+  font-size: 3em;
+  color: rgb(30, 30, 34);
+  font-family: "Gravity-Light";
+}
+
+.project-presentation p {
+  color: rgb(30, 30, 34);
+  font-family: "Gravity-Regular";
+  font-size: 1.5em;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.point-present {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.point-present div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  margin-right: 7em;
+  margin-left: 7em;
+  margin-top: 0;
+}
+
+.point-present div p {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.point-present div h2 {
+  color: rgb(30, 30, 34);
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-family: "Gravity-Regular";
+}
+
+#title-desc {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 5em;
 }
