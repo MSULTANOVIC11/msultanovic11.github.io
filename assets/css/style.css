@@ -408,14 +408,11 @@ a:link {
 
 .project-presentation {
   width: 100%;
-  height: 48em;
+  height: 150%;
   display: -ms-flexbox;
 
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .project-presentation h1 {
@@ -426,11 +423,16 @@ a:link {
 }
 
 .project-presentation p {
-  color: rgb(30, 30, 34);
+  color: black;
   font-family: "Gravity-Regular";
   font-size: 1.5em;
   word-wrap: break-word;
   text-align: center;
+}
+
+.project-presentation h2 {
+  color: black;
+  font-family: "Gravity-Regular";
 }
 
 .point-present {
@@ -457,7 +459,7 @@ a:link {
 }
 
 .point-present div h2 {
-  color: rgb(30, 30, 34);
+  color: black;
   margin-top: 1em;
   margin-bottom: 0;
   font-family: "Gravity-Regular";
@@ -471,4 +473,46 @@ a:link {
   align-items: center;
   margin-top: 0;
   margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0%;
+
+  width: 40%;
+
+  margin-top: 2em;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.moreInfo li {
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreInfo h3 {
+  color: black;
+  font-family: "Gravity-Regular";
+}
+
+.moreInfo div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7em;
+  margin-left: 7em;
+}
+
+#moreh {
+  font-size: 2em;
+  font-family: "Gravity-Light";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
