@@ -1,0 +1,325 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery infiniteSlide V2 Examples</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+<link rel="stylesheet" href="style.css" />
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="infiniteslidev2.js"></script>
+
+
+
+
+<style type="text/css">
+	.scroll1,.scroll2,.scroll3,.scroll4,.scroll5,.scroll6, .simply-scroll-list{
+		display: none;
+	}
+	.scroll1 img,.scroll2 img,.scroll3 img,.scroll4 img,.scroll5 img,.scroll6 img,.simply-scroll-list img {
+		vertical-align: bottom;
+	}
+	.scroll2 .scroll_item {
+		position: relative;
+	}
+	.scroll2 .scroll_item h3 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 10px;
+		color: #fff;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.scroll3 {
+		width: 500px;
+		margin: 0 auto;
+	}
+	.scroll4 > * {
+		background: #eee;
+		padding: 10px;
+	}
+	.scroll4 > *:nth-child(even) {
+		background: #ddd;
+	}
+	.scroll6 li {
+		width: 100%;
+	}
+	.scroll6 li img {
+		width: 100%;
+		height: auto;
+	}
+</style>
+
+<script type="text/javascript">
+	$(function(){
+	    $('.simply-scroll-list').infiniteslide();
+		$('.scroll1').infiniteslide();
+		$('.scroll2').infiniteslide({
+			speed: 100,
+			direction: 'right'
+		});
+		$('.scroll3').infiniteslide({
+			speed: 300,
+			direction: 'down'
+		});
+		$('.scroll4').infiniteslide({
+			pauseonhover: false
+		});
+		$('.scroll5').infiniteslide({
+			speed: 50
+		});
+		$('.scroll6').infiniteslide({
+			speed: 200,
+			responsive: true
+		});
+		$('.scroll7').infiniteslide({
+			direction: 'right',
+			clone: 10
+		});
+	});
+</script>
+
+</head>
+<body>
+<header>
+	<h1>jQuery infiniteSlide V2 Examples</h1>
+
+</header>
+
+<div class="module">
+<div class="jquery-script-ads" style="margin:30px auto;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+      
+
+
+
+	<h2>Basic</h2>
+	<ul class="scroll1">
+		<li><img src="https://unsplash.it/400/300/?random" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/people" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/tech" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/arch" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/animals" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/arch/sepia" alt="" /></li>
+	</ul>
+
+	<pre><code class="javascript">
+$('.scroll1').infiniteslide();
+	</code></pre>
+</div>
+
+<div class="module">
+	<h2>Mixed Content</h2>
+	<div class="scroll2">
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 1</h3>
+				<div class="img">
+					<img src="https://unsplash.it/400/300/?random" alt="" />
+				</div>
+			</div>
+		</a>
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 2</h3>
+				<div class="img">
+					<img src="https://placeimg.com/400/300/people" alt="" />
+				</div>
+			</div>
+		</a>
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 3</h3>
+				<div class="img">
+					<img src="https://placeimg.com/400/300/arch" alt="" />
+				</div>
+			</div>
+		</a>
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 4</h3>
+				<div class="img">
+					<img src="https://placeimg.com/400/300/arch/sepia" alt="" />
+				</div>
+			</div>
+		</a>
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 5</h3>
+				<div class="img">
+					<img src="https://unsplash.it/400/300/?random" alt="" />
+				</div>
+			</div>
+		</a>
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 6</h3>
+				<div class="img">
+					<img src="https://placeimg.com/400/300/people" alt="" />
+				</div>
+			</div>
+		</a>
+		<a href="https://google.com">
+			<div class="scroll_item">
+				<h3>Desciption 7</h3>
+				<div class="img">
+					<img src="https://placeimg.com/400/300/arch" alt="" />
+				</div>
+			</div>
+		</a>
+	</div>
+	<pre><code class="javascript">
+$('.scroll2').infiniteslide({
+	speed: 200,
+	direction: 'right'
+});
+	</code></pre>
+</div>
+
+<div class="module">
+	<h2>Vertical</h2>
+	<ul class="scroll3">
+		<li><a href="https://yahoo.co.jp"><img src="https://unsplash.it/400/300/?random" alt="" /></a></li>
+		<li><a href="https://yahoo.co.jp"><img src="https://placeimg.com/400/300/people" alt="" /></a></li>
+		<li><a href="https://yahoo.co.jp"><img src="https://placeimg.com/400/300/tech" alt="" /></a></li>
+		<li><a href="https://yahoo.co.jp"><img src="https://placeimg.com/400/300/arch" alt="" /></a></li>
+		<li><a href="https://yahoo.co.jp"><img src="https://placeimg.com/400/300/animals" alt="" /></a></li>
+	</ul>
+
+	<pre><code class="javascript">
+$('.scroll3').infiniteslide({
+	speed: 300,
+	direction: 'down'
+});
+	</code></pre>
+
+</div>
+
+<div class="module">
+	<h2>Text Scroller</h2>
+	<ul class="scroll4">
+		<li>2020.00.00 Breaking News 1</li>
+		<li>2020.00.00 Breaking News 2</li>
+		<li>2020.00.00 Breaking News 3</li>
+		<li>2020.00.00 Breaking News 4</li>
+		<li>2020.00.00 <a href="#">Breaking News 5</a></li>
+		<li>2020.00.00 Breaking News 6ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーん。</li>
+	</ul>
+
+	<pre><code class="javascript">
+$('.scroll4').infiniteslide({
+	pauseonhover: false
+});
+	</code></pre>
+</div>
+
+<div class="module">
+	<h2>With different heights</h2>
+	<div class="scroll5">
+		<div class="scroll_item">
+			<img src="https://unsplash.it/300/400/?random" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://unsplash.it/400/300/?random" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://placeimg.com/400/300/people" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://placeimg.com/300/400/people" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://placeimg.com/300/400/nature" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://placeimg.com/400/300/tech" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://placeimg.com/400/300/arch" alt="" />
+		</div>
+		<div class="scroll_item">
+			<img src="https://placeimg.com/400/300/animals" alt="" />
+		</div>
+	</div>
+
+	<pre><code class="javascript">
+$('.scroll5').infiniteslide({
+	speed: 50
+});
+	</code></pre>
+
+
+
+</div>
+
+<div class="module">
+	<h2>Responsive</h2>
+	<ul class="scroll6">
+		<li><img src="https://unsplash.it/400/300/?random" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/people" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/tech" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/arch" alt="" /></li>
+	</ul>
+
+	<pre><code class="javascript">
+$('.scroll6').infiniteslide({
+	speed: 200,
+	responsive: true
+});
+	</code></pre>
+
+
+</div>
+
+
+<div class="module">
+	<h2>Clone Items</h2>
+	<ul class="scroll7">
+		<li><img src="https://unsplash.it/400/300/?random" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/arch" alt="" /></li>
+	</ul>
+
+	<pre><code class="javascript">
+$('.scroll7').infiniteslide({
+	direction: 'right',
+	clone: 10
+});
+	</code></pre>
+
+
+</div>
+
+
+<footer>
+	&copy; <a href="http://wood-roots.com" target="_blank" rel="nofollow">Wood-Roots:blog</a>
+</footer>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
