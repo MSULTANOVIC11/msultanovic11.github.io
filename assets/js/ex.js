@@ -65,41 +65,11 @@ function loadBackground(){
 };
 
 
-var imgObj ;
-var animate ;
-function init(){
- imgObj = document.getElementsByClassName("myImage");
- for(var i = 0; i<imgObj.length; i++ ){
-    imgObj[i].style.left = "0%";
- }
- moveRight();
-}
 
-
-
-function moveRight(){
-
-
-    for(var i = 0; i<imgObj.length; i++ ){
-        imgObj[i].style.left = parseFloat(imgObj[i].style.left) + 0.15 + '%'; // move from the left 5 pixels
- if(parseFloat(imgObj[i].style.left) > 65){
-    imgObj[i].style.left = '-60%'; 
- }
-     }
-
-
-    
- 
- animate = setTimeout(moveRight,20); // call moveRight in 20 milliseconds
-}
-function stop(){
- clearTimeout(animate); // stops the animation
- // add imgObj.style.left = '0px'; if you want to reset the image back to the left side of screen
-}
 
 window.onload = function() {
-    init();
     var temp = loadBackground();
+
 
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
