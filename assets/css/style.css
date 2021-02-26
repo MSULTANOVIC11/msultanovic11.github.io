@@ -112,6 +112,13 @@ a:link {
   color: #ffffff;
   text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
   text-transform: none;
+  word-wrap: break-word;
+  max-width: 45em;
+  margin-bottom: 1em;
+}
+
+#banner #aboutme {
+  font-size: 2em;
 }
 
 .inner {
