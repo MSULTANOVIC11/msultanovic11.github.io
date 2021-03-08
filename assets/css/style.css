@@ -66,7 +66,7 @@ a:link {
   position: absolute;
   display: inline-block;
   width: 100%;
-  height: 110%;
+  height: 70em;
 }
 
 #banner {
@@ -235,6 +235,15 @@ a:link {
     width: 8em;
     height: 8em;
   }
+
+  .logo-main {
+    width: 100%;
+    height: 100%;
+  }
+
+  #banner #aboutme {
+    font-size: 1.245em;
+  }
 }
 
 .navigator {
@@ -317,7 +326,7 @@ a:link {
 
   border-top: 0;
   min-height: 100%;
-  height: 110%;
+  height: 70em;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -442,8 +451,11 @@ a:link {
 @media screen and (orientation: landscape) and (max-device-height: 810) {
   .logo-main {
     position: relative;
-    width: 5em;
-    height: 5em;
+    width: 100%;
+  }
+
+  #banner .inner {
+    margin-top: 20em;
   }
 
   #portf .inner {
@@ -508,6 +520,7 @@ a:link {
   margin-top: 1em;
   margin-bottom: 0;
   font-family: "Gravity-Regular";
+  text-align: center;
 }
 
 #title-desc {
@@ -605,4 +618,38 @@ footer #copyright p {
 footer #name {
   font-size: 1.3em;
   padding-bottom: 1em;
+}
+
+@media screen and (max-width: 790px) {
+  .point-present {
+    flex-direction: column;
+  }
+  .point-present div {
+    width: auto;
+    margin-bottom: 1em;
+  }
+
+  .project-presentation p {
+    width: 12em;
+  }
+
+  .background-color {
+    height: 32em;
+  }
+
+  .portf-project {
+    height: 32em;
+    min-height: auto;
+  }
+
+  #banner #aboutme {
+    font-size: 1.5em;
+  }
+
+  #banner header {
+    margin-top: 6em;
+  }
+  #banner {
+    height: auto;
+  }
 }
