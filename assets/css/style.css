@@ -386,6 +386,10 @@ a:link {
   display: none;
 }
 
+.picProj {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 790px) {
   #portf .inner {
     margin-top: 18em;
@@ -409,6 +413,9 @@ a:link {
 
   .navigator nav a {
     display: none;
+  }
+  .navigator nav div {
+    width: 100%;
   }
 
   .navigator nav #nameA {
