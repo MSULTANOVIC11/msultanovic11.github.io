@@ -66,7 +66,6 @@ function loadBackground(){
 
 
 
-
 window.onload = function() {
     var temp = loadBackground();
 

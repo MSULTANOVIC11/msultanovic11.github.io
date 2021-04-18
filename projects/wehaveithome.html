@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project - We Have It Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../assets/js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../assets/js/infiniteslidev2.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery.simplyscroll.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $(".scroll").infiniteslide();
+      });
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="../assets/css/jquery.simplyscroll.css"
+      media="all"
+      type="text/css"
+    />
+  </head>
+  <div class="background-color" style="background-color: #f7980d"></div>
+
+  <header class="navigator" id="myTopNav">
+    <nav>
+      <a id="nameA" href="../index.html">
+        <div id="name"><p>Maid Sultanovic</p></div></a
+      >
+      <div id="rightSideNav">
+        <a href="mailto:maid.sultanovic@gmail.com">
+          <div><p>Contact</p></div></a
+        >
+        <a id="here-menu" href="../portfolio.html">
+          <div><p>Portfolio</p></div></a
+        >
+        <a href="../about.html">
+          <div><p>About</p></div></a
+        >
+
+        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <section class="portf-project">
+      <img
+        class="logo-main-project"
+        src="../assets/images/homepage.png"
+        alt="Computer logo"
+        width="750"
+        height="1000"
+      />
+    </section>
+    <div class="project-presentation" style="background-color: white">
+      <div id="title-desc">
+        <h1>WeHaveItHome</h1>
+        <p>This app helps the user to manage his food at home.</p>
+      </div>
+      <div class="point-present">
+        <div>
+          <img src="../assets/images/mobile.png" width="120" height="120" />
+          <h2>Mobile</h2>
+          <p>This app is accessible on both Android and iOS.</p>
+        </div>
+        <div>
+          <img src="../assets/images/user.png" width="160" height="120" />
+          <h2>Personal</h2>
+          <p>
+            You add and store your personal meals within an account you create.
+          </p>
+        </div>
+        <div>
+          <img src="../assets/images/lightbulb.png" width="160" height="120" />
+          <h2>MVP</h2>
+          <p>
+            Minimal Valuable Product, it means that the app can and will be
+            upgraded with new features incoming!
+          </p>
+        </div>
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" style="display: block">
+          <img
+            src="../assets/images/wehaveithome/photo1.png"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="../assets/images/wehaveithome/homepage.png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../assets/images/wehaveithome/photo2.png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../assets/images/wehaveithome/photo3.png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../assets/images/wehaveithome/photo4.png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../assets/images/wehaveithome/photo5.png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../assets/images/wehaveithome/photo6.png"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+
+      <h2 id="moreh">More</h2>
+      <div class="moreInfo">
+        <h3>Technology used</h3>
+        <div id="scroller">
+          <ul class="scroll">
+            <li>
+              <a href="https://dart.dev/" target="_blank"
+                ><img src="../assets/images/dart.png" height="100"
+              /></a>
+            </li>
+
+            <li>
+              <a href="https://flutter.dev/" target="_blank"
+                ><img src="../assets/images/flutter.png" height="100"
+              /></a>
+            </li>
+
+            <li>
+              <a href="https://marvelapp.com/" target="_blank"
+                ><img src="../assets/images/marvel.png" height="100"
+              /></a>
+            </li>
+            <li>
+              <a href="https://firebase.google.com/" target="_blank"
+                ><img src="../assets/images/firebase.png" height="100"
+              /></a>
+            </li>
+            <li>
+              <a href="https://dart.dev/" target="_blank"
+                ><img src="../assets/images/dart.png" height="100"
+              /></a>
+            </li>
+
+            <li>
+              <a href="https://flutter.dev/" target="_blank"
+                ><img src="../assets/images/flutter.png" height="100"
+              /></a>
+            </li>
+
+            <li>
+              <a href="https://marvelapp.com/" target="_blank"
+                ><img src="../assets/images/marvel.png" height="100"
+              /></a>
+            </li>
+            <li>
+              <a href="https://firebase.google.com/" target="_blank"
+                ><img src="../assets/images/firebase.png" height="100"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <h3></h3>
+      </div>
+    </div>
+  </body>
+  <footer style="background-color: #f7980d">
+    <div>
+      <h2>Link for the project : Soon...</h2>
+      
+      <!-- <a
+        href="https://github.com/MaidSULTANOVIC/maidsultanovic.github.io"
+        target="_blank"
+        ><img
+          src="../assets/images/GitHub-Logos/GitHub_Logo_White.png"
+          height="70"
+      /></a> -->
+    </div>
+    <div id="copyright">
+      <p id="name">Maid Sultanovic - Copyright 2021</p>
+      <a href="mailto:maid.sultanovic@gmail.com"
+        ><div class="entry">
+          <p>Contact</p>
+        </div></a
+      >
+    </div>
+  </footer>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/imageSlide.js"></script>
+</html>
